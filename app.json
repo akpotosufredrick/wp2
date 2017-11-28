@@ -1,0 +1,58 @@
+{
+  "name": "Wickelplaetze",
+  "indexHtmlPath": "index.html",
+  "url": null,
+  "js": [
+    {
+      "path": "touch/sencha-touch.js",
+      "x-bootstrap": true
+    },
+    {
+      "path": "app.js",
+      "bundle": true,
+      "update": "delta"
+    },
+    {
+      "path": "infobox_packed.js"
+    }
+  ],
+  "css": [
+    {
+      "path": "resources/css/app.css",
+      "update": "delta"
+    },
+    {
+      "path": "style/ratings.css",
+      "update": "delta"
+    }
+  ],
+  "appCache": {
+    "cache": [
+      "index.html",
+      "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true",
+      "http://maps.gstatic.com/intl/en_us/mapfiles/api-3/10/19/main.js"
+    ],
+    "network": [
+      "*"
+    ],
+    "fallback": []
+  },
+  "resources": [
+    "resources/images",
+    "resources/icons",
+	"style",
+    "images"
+  ],
+  "ignore": [
+    ".svn$"
+  ],
+  "archivePath": "archive",
+  "requires": [],
+  "buildOptions": {
+    "product": "touch",
+    "minVersion": 3,
+    "debug": false,
+    "logger": true
+  },
+  "id": "462038fa-b116-4d0d-9368-f9a4816791ef"
+}

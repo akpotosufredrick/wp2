@@ -1,0 +1,54 @@
+/*7ad41294fc8f641455c4e5b90e8455eb7da6f913*/.srtgs .stars, .srtgs .d_rtg, .srtgs .totalrate { width:10em; }
+.srtgs {
+ position:relative;
+ width:10em;
+ margin:0;
+ text-align:left;
+ padding:2px 0px;
+}
+.srtgs .stars {
+ position:relative;
+ height:2.6em;
+ margin:0;
+ background: url(str.png);
+ padding:0px;
+}
+.srtgs .d_rtg {
+ position:absolute;
+ top:0; left:0;
+ margin:0;
+ height:2.6em;
+}
+.srtgs .totalrate {
+ position:relative;
+ font-weight:bold;
+ color:#0001ed;
+ display: none;
+}
+.totalrate i {
+ padding-right:1em;
+ color:#010101;
+}
+.totalrate span{
+ color:#ed0001;
+}
+ .srtgs .d_rtg span {
+  display:block;
+  width:2em;
+  float:left;
+  cursor:pointer;
+  height: 2.6em;
+ }
+.srtgs .star_n {
+ position:relative;
+ height:2.6em;
+ margin:0;
+ background: url(rts.png);
+ width: 10em;
+}
+.srtgs em {
+ display:block;
+ margin:1em;
+ font-size:1.3em;
+ display: none;
+}

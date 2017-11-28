@@ -1,0 +1,119 @@
+$blue: #5079DD;
+$gray: #F1F1F1;
+$graybig: #D9D9D9;
+$white: #FFF;
+
+$base-color: $gray;
+$active-color: $blue;
+$base-gradient: bevel;
+$list-active-color: $blue;
+$font-family: Calibri !default;
+
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+//@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+//@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+
+// Your custom code goes here...
+@include sencha-loading-spinner;
+@include sencha-list-paging;
+@include sencha-list-pullrefresh;
+@include pictos-iconmask('locate1');
+@include pictos-iconmask('list');
+@include pictos-iconmask('search1');
+
+#search #ext-titlebar-1{
+	display: none;
+	visibility: hidden;
+}
+
+.x-tabbar-dark.x-docked-bottom .x-tab-active .x-button-icon {
+	background-color: $blue !important;
+	background-image: none !important;
+}
+
+.x-tabbar-dark .x-tab-active {
+	color: $blue !important;
+}
+
+//list item
+.x-scroll-scroller{
+	-webkit-backface-visibility: hidden;
+}
+
+.x-list-normal .x-list-item {
+	width: 95% ;
+}
+
+.x-list .x-list-disclosure {
+	background-image: none ;
+	background-color: $white ;
+	margin: 1.5em 0.5em 0 0;
+	left: 88% ;
+	position: absolute;
+	float: left;
+	z-index: 1000;
+}
+
+.x-indexbar div {
+	color: $blue;
+	font-size: 1em ;
+}
+
+.x-list .x-list-item.x-item-pressed .x-dock-horizontal{
+	background: none ;
+}
+
+.x-list-normal .x-list-item .x-dock-horizontal{
+	border: 0 !important;
+}
+
+.loclistdata{
+	font-size: 0.89em;
+	float: left;
+}
+.loclist.header2{
+	font-size: 1em;
+	font-weight: bold ;
+	text-transform: uppercase;
+}
+
+.x-html h2 {
+	font-size: 1.5em ;
+	margin-bottom: 0 ;
+}
+
+//location detail
+.locdetail{
+	padding: 0.5em;
+	width: 100%;
+	float: left;
+	border: 2px solid $graybig;
+	background-color: $white;
+	background: $white;
+}
+
+//Data
+.loclist, .favloc{
+	float: left;
+	border: 1px solid $graybig;
+	background: rgba(255,255,255,0.7);
+	padding: 0.5em;
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0px 0.5em;
+}
